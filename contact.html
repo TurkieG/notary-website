@@ -13,8 +13,18 @@
   <div class="header-inner">
     <a class="brand" href="index.html">
       <svg class="brand-seal" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="46" fill="none" stroke="#b8912f" stroke-width="2"/>
-        <text x="50" y="61" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" fill="#b8912f">ACT</text>
+        <defs>
+          <linearGradient id="shineHeader" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0.3">
+            <stop offset="0%" stop-color="#8a6a1f"/>
+            <stop offset="40%" stop-color="#b8912f"/>
+            <stop offset="50%" stop-color="#fff6e0"/>
+            <stop offset="60%" stop-color="#b8912f"/>
+            <stop offset="100%" stop-color="#8a6a1f"/>
+            <animateTransform attributeName="gradientTransform" type="translate" from="-1.2 0" to="1.2 0" dur="2.8s" repeatCount="indefinite"/>
+          </linearGradient>
+        </defs>
+        <circle cx="50" cy="50" r="46" fill="none" stroke="url(#shineHeader)" stroke-width="2"/>
+        <text x="50" y="61" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" fill="url(#shineHeader)">ACT</text>
       </svg>
       <span class="brand-name">ACT Right Notary</span>
     </a>

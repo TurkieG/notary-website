@@ -76,7 +76,21 @@ a { color: var(--navy-mid); }
   color: var(--white);
 }
 
-.brand-seal { width: 40px; height: 40px; flex-shrink: 0; }
+.brand-seal {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  animation: seal-glow 3s ease-in-out infinite;
+}
+
+.hero-seal-wrap svg {
+  animation: seal-glow 3s ease-in-out infinite;
+}
+
+@keyframes seal-glow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(184, 145, 47, 0.35)); }
+  50% { filter: drop-shadow(0 0 8px rgba(217, 184, 114, 0.9)); }
+}
 
 .brand-name {
   font-family: 'Fraunces', Georgia, serif;
